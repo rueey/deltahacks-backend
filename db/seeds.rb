@@ -162,22 +162,22 @@ weights = [
   {
 		disease_id: Disease.find_by(disease: "Coronary Artery Disease").id,
 		symptom_id: 10,
-		weighting: 20
-	},
-  {
-		disease_id: Disease.find_by(disease: "Coronary Artery Disease").id,
-		symptom_id: 4,
-		weighting: 20
-	},
-  {
-		disease_id: Disease.find_by(disease: "Coronary Artery Disease").id,
-		symptom_id: 9,
 		weighting: 15
 	},
   {
 		disease_id: Disease.find_by(disease: "Coronary Artery Disease").id,
+		symptom_id: 4,
+		weighting: 15
+	},
+  {
+		disease_id: Disease.find_by(disease: "Coronary Artery Disease").id,
+		symptom_id: 9,
+		weighting: 10
+	},
+  {
+		disease_id: Disease.find_by(disease: "Coronary Artery Disease").id,
 		symptom_id: 8,
-		weighting: 25
+		weighting: 20
 	},
   {
 		disease_id: Disease.find_by(disease: "Food Poisoning").id,
