@@ -13,6 +13,7 @@ diseases = [
 	},
 	{
 		disease: "Seasonal Allergies", bio: "Allergy symptoms include itchy eyes and skin, sneezing, nasal congestion, wheezing, and rash. Seasonal allergies result from grass, weed, tree pollen, molds or smog.\n\nhttps://www.webmd.com/allergies/summer-allergies",
+    pic_url: "https://restoreyourhealth.ca/wp-content/uploads/2019/04/fight_seasonal_allergies-blog-940x675.jpg",
 		contagious: true, lethality: "0%", disease_class: "Acute"
 	},
 	{
