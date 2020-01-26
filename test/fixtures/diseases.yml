@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  disease: MyString
+  bio: MyText
+  pic_url: MyString
+  contagious: false
+  lethality: 
+  type: 
+  phone: MyString
+
+two:
+  disease: MyString
+  bio: MyText
+  pic_url: MyString
+  contagious: false
+  lethality: 
+  type: 
+  phone: MyString
