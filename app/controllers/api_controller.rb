@@ -23,20 +23,26 @@ class ApiController < ApplicationController
     Score.transaction do
       for entry in @user.scores do
         past_score = entry.score
-        disease_id = entry.disease_id
-        entry.update_columns(score: past_score + 
-                             Weight.find_by(disease_id: disease_id, symptom_id: params[:symptom_id]).weighting)
+        @d_id = entry.disease_id
+        entry.update_columns(score: past_score +
+          (Weight.find_by(disease_id: @d_id, symptom_id: params[:symptom_id])&.weighting || 0))
       end
     end
     render json: :success
   end
 
   def create_user
-    render json: User.find_or_create_by(session_id: params[:session_id]) do |user|
+    @user = User.find_or_create_by(session_id: params[:session_id]) do |user|
       user.name = params[:name]
       user.bio = params[:bio]
       user.pic_url = params[:pic_url]
     end
+
+    for disease in Disease.all do
+      Score.create(user_id: @user.id, disease_id: disease.id, score: 0)
+    end
+
+    render json: @user
   end
 
   private
