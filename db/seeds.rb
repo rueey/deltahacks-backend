@@ -182,37 +182,37 @@ weights = [
   {
 		disease_id: Disease.find_by(disease: "Food Poisoning").id,
 		symptom_id: 7,
-		weighting: 25
+		weighting: 10
 	},
   {
 		disease_id: Disease.find_by(disease: "Food Poisoning").id,
 		symptom_id: 6,
-		weighting: 25
+		weighting: 10
 	},
   {
 		disease_id: Disease.find_by(disease: "Food Poisoning").id,
 		symptom_id: 5,
-		weighting: 25
+		weighting: 10
 	},
   {
 		disease_id: Disease.find_by(disease: "Food Poisoning").id,
 		symptom_id: 0,
-		weighting: 10
+		weighting: 5
 	},
   {
 		disease_id: Disease.find_by(disease: "Food Poisoning").id,
 		symptom_id: 2,
-		weighting: 10
+		weighting: 5
 	},
   {
 		disease_id: Disease.find_by(disease: "Food Poisoning").id,
 		symptom_id: 4,
-		weighting: 10
+		weighting: 5
 	},
   {
 		disease_id: Disease.find_by(disease: "Food Poisoning").id,
 		symptom_id: 13,
-		weighting: 10
+		weighting: 5
 	},
   {
 		disease_id: Disease.find_by(disease: "Mononucleosis (Mono)").id,
