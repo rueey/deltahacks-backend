@@ -2,6 +2,7 @@
 # these are the only endpoints we'll ever need to hit
 
 class ApiController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :set_user, only: [:get_diseases]
   before_action :set_disease, only: [:get_symptoms]
   before_action :permit_update_params, only: [:update_score_for_disease]
